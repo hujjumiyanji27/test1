@@ -1,0 +1,527 @@
+/* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #be1622;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logoimage img {
+  height: 50px;
+}
+.shop h1 {
+  margin: 0;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  margin-right: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: #999;
+}
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+  .nav-menu {
+      display: none;
+  }
+  .nav-menu.active {
+      display: block;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .hamburger {
+      display: none;
+  }
+  .nav-menu {
+      display: flex;
+  }
+}
+
+
+
+/* Body styling */
+.offer {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+#product-offer {
+  margin-bottom: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.main h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.main p {
+  margin-bottom: 20px;
+}
+.video {
+  margin-bottom: 20px;
+}
+.video iframe, 
+.video video {
+  width: 100%;
+}
+.footer {
+  background-color: #34516c;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.links h3, 
+.contact h3, 
+.location h3 {
+  margin-bottom: 10px;
+}
+.links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.links a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.links a:hover {
+  color: #ccc;
+}
+.contact h4, 
+.location h4 {
+  margin-bottom: 10px;
+}
+.location h4:last-child {
+  margin-bottom: 0;
+}
+
+/* product page */
+
+/* this is for the filter hoodie jumper and tshirts */
+
+.subNavList:active {
+  background-color: red;
+  color: white;
+}
+
+/* Styles for larger screens */
+@media only screen and (min-width: 768px) {
+  .subNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subNav span {
+    margin-right: 1rem;
+  }
+  
+  .subNav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .subNav li {
+    margin-right: 1rem;
+  }
+  
+  .subNav a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+/* Styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  .subNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subNav span {
+    margin-bottom: 1rem;
+  }
+  
+  .subNav li {
+    margin-bottom: 1rem;
+  }
+}
+
+/* display responsive body tag on product page */
+
+#product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  /* background-color: blue; */
+  border-radius: 10px;
+  border: #000;
+}
+
+#product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+#product-title {
+  background-color: red;
+}
+#product-desc {
+  background-color: white;
+}
+.readmore {
+  background-color: #000;
+  color: #fff;
+  font-size: medium;
+}
+.review {
+  font-size: medium;
+}
+#product-price {
+  font-size: medium;
+  color: red;
+}
+button {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Styles for larger screens */
+@media only screen and (min-width: 768px) {
+  #product {
+    display: inline-block;
+    width: 25%;
+    margin: 10px;
+    vertical-align: top;
+  }
+}
+
+/* Styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  #product {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* for the search bar */
+
+/* Style for the search input */
+#search-input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  width: 60%;
+}
+
+/* Style for the search button */
+button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 767px) {
+  #search-input {
+    width: 50%;
+  }
+}
+
+/* for the scroll up button */
+
+#myBtn {
+  display: none; /* Hide the button by default */
+  position: fixed; /* Fixed position on the screen */
+  bottom: 20px; /* Place the button 20px from the bottom */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it appears on top of other elements */
+  border: none; /* Remove button border */
+  outline: none; /* Remove button outline */
+  background-color: #555; /* Set button background color */
+  color: white; /* Set button text color */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  padding: 15px; /* Set button padding */
+  border-radius: 50%; /* Make button circular */
+}
+
+#myBtn:hover {
+  background-color: black; /* Change background color on hover */
+}
+
+
+/* this css for the cart page */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr {
+    border: 1px solid #ccc;
+  }
+  
+  td img{
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+  
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+  
+  .cart-total {
+    text-align: right;
+  }
+}
+
+.productimg {
+  width: 100px; /* Set the width to 100 pixels */
+  height: auto; /* Let the height adjust automatically to maintain the aspect ratio */
+}
+
+
+/* this code is for login form  */
+/* Responsive CSS for the body tag */
+.mainlogin {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size:large;
+}
+
+.logincontainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logincontainer h1 {
+  color: #fff;
+}
+
+.login {
+  font-size: 24px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+.alreadyregistered {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.alreadyregistered:hover {
+  text-decoration: underline;
+}
+
+/* this is for welcome page or card */
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-color: #000;
+  border-style: double;
+}
+
+/* this is for review page */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.review {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.review h3 {
+  margin-top: 0;
+}
+.review p {
+  margin-bottom: 0;
+}
+
+#reviews{
+ background-color: red;
+}
+
+
+/* home 1 page css */
+
+@media only screen and (max-width: 768px) {
+
+  .hamburger {
+
+      display: block;
+
+  }
+
+
+
+
+  .nav-menu {
+
+      display: none;
+
+  }
+  .nav-menu.active {
+      display: block;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .hamburger {
+      display: none;
+  }
+  .nav-menu {
+      display: flex;
+  }
+}
+/* scroll to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 300px;
+  left: 30px;
+  z-index: 1;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
